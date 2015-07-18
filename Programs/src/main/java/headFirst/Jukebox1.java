@@ -28,7 +28,7 @@ public class Jukebox1 {
 		
 		try{
 			
-			File file = new File("D:/Eclipse_WorkSpace/Programs/UserIOFile/SongList.txt");
+			File file = new File("D:/Eclipse_WorkSpace/Projects/Programs/UserIOFile/SongList.txt");
 			BufferedReader reader = new BufferedReader (new FileReader(file));
 			String line = null;
 			

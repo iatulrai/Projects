@@ -1,6 +1,6 @@
 package headFirst;
 
- class Song implements Comparable<Song> {
+public class Song implements Comparable<Song> {
 	
 	String title;
 	String artist;
