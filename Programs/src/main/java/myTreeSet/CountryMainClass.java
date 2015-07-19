@@ -19,7 +19,7 @@ public class CountryMainClass {
 		
 		for (Country ctr : set){
 			
-			System.out.println(ctr.code);
+			System.out.println(ctr.name +" "+ ctr.pm +" "+ ctr.code);
 		}
 		
 	}

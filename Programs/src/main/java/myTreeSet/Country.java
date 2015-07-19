@@ -17,7 +17,7 @@ public class Country implements Comparable{
 	
 	public int hashCode(){
 		
-		return ((int) code * name.length());
+		return ((int) code * pm.hashCode());
 	}
 	
 	public boolean equals(Object ob){
