@@ -28,7 +28,7 @@ public class Jukebox6
     
     void getSongs() {
         try {
-            File file = new File("D:/Eclipse_WorkSpace/Projects/Programs/UserIOFile/SongList2.txt");
+            File file = new File("D:/Eclipse_WorkSpace/Projects/Programs/UserIOFile/SongListMore.txt");
             BufferedReader reader = new BufferedReader(new FileReader(file));
             String line = null;
             while ((line = reader.readLine()) != null) {
