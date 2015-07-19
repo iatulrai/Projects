@@ -1,4 +1,4 @@
-package testYourSelf;
+package myHashSet;
 
 public class Person {
 	String name;

@@ -1,9 +1,9 @@
-package testYourSelf;
+package myHashSet;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class HashSetClearMethod {
+public class HashSetContainsMethod {
 	
 	public static void main(String[] args) {
 		
@@ -16,11 +16,7 @@ public class HashSetClearMethod {
 		str.add("Shyam");
 		str.add("Ram");	
 					
-		System.out.println(str);
-		
-		str.clear();   // clear method
-		
-		System.out.println(str);
+		System.out.println(str.contains("Ram"));
 			
 
 		

@@ -1,5 +1,5 @@
 // contain the duplicates value
-package testYourSelf;
+package myHashSet;
 
 import java.util.HashSet;
 import java.util.Iterator;

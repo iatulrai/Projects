@@ -1,9 +1,9 @@
-package testYourSelf;
+package myHashSet;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class HashSetSizeMethod {
+public class HashSetIsEmptyMethod {
 	
 	public static void main(String[] args) {
 		
@@ -14,10 +14,13 @@ public class HashSetSizeMethod {
 		str.add("Mohan");
 		str.add("Sohan");
 		str.add("Shyam");
-		str.add("Ram");		
+		str.add("Ram");	
 					
-		System.out.println(str.size());
-		
+		System.out.println(str.isEmpty());
+			
 
+		
+		
 	}
+
 }

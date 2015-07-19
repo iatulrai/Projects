@@ -1,4 +1,4 @@
-package testYourSelf;
+package myHashSet;
 
 import java.util.HashSet;
 import java.util.Set;

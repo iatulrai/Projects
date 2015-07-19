@@ -1,9 +1,10 @@
-package testYourSelf;
+package myHashSet;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
-public class HashSetRemoveMethod {
+public class HashSetIteratorMethod {
 	
 	public static void main(String[] args) {
 		
@@ -15,15 +16,13 @@ public class HashSetRemoveMethod {
 		str.add("Sohan");
 		str.add("Shyam");
 		str.add("Ram");	
-		str.add("Atul");
 					
-		System.out.println("Values before remove: "+str);
+		Iterator itr = str.iterator();
 		
-		boolean rmv = str.remove("Atul");
-		
-		System.out.println("Values after remove: "+str);
-		
-		
+		while (itr.hasNext()) {
+			
+			System.out.println(itr.next());
+		}
 			
 
 		

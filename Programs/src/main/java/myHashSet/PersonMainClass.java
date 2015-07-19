@@ -1,7 +1,6 @@
-package testYourSelf;
+package myHashSet;
 
 import java.util.HashSet;
-import java.util.Set;
 
 public class PersonMainClass {
 	public static void main(String[] args) {
@@ -17,7 +16,8 @@ public class PersonMainClass {
 	    Person p8 = new Person("HHHHHHHHHH", 17,  "varanasi");  // duplicate
 	    Person p9 = new Person("HHHHHHHHHH", 17,  "varanasi");
 	    
-	    Set<Person> set = new HashSet<>();
+	    HashSet<Person> set = new HashSet<>();
+	    
 	    set.add(p1);
 	    set.add(p2);
 	    set.add(p3);
