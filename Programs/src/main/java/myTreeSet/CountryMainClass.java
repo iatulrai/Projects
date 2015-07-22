@@ -9,6 +9,8 @@ public class CountryMainClass {
 		Country c2 = new Country("Japan", "Huzi", 323);
 		Country c3 = new Country("USA", "Obama", 1);
 		Country c4 = new Country("Russia", "Putin", 922);
+		Country c5 = new Country("India", "Modi", 91);  // duplicate
+		Country c6 = new Country("USA", "Obama", 1);  // duplicate
 		
 		TreeSet<Country> set = new TreeSet<>();
 		

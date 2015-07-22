@@ -39,7 +39,7 @@ public class Country implements Comparable{
 	public int compareTo(Object ob){
 		
 		Country c = (Country) ob;
-		return(name.compareTo(c.pm));
+		return(name.compareTo(c.name));
 	}
 	
 	
