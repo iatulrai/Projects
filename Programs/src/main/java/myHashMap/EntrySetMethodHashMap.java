@@ -29,7 +29,7 @@ public class EntrySetMethodHashMap {
 		}
 		
 		
-		// way 2 to(weired way) to iterate the Map
+		// way 2 (weired way) to iterate the Map
 		System.out.println("(weired way) to iterate the Map");
 		
 		for (Object key : hm.keySet()) {
