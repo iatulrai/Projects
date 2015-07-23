@@ -2,7 +2,8 @@ package myHashMap;
 
 import java.util.HashMap;
 
-public class PutMethodHashMap {
+public class GetMethodHashMap  {
+	
 	public static void main(String[] args) {
 		
 		HashMap<String, Integer> hm = new HashMap<String, Integer>();
@@ -12,6 +13,7 @@ public class PutMethodHashMap {
 		
 		System.out.println(hm);
 		
+		System.out.println(hm.get("Hi"));
 	}
 
 }
