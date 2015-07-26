@@ -8,7 +8,7 @@ public class ArrayListTest {
 		ArrayList<String> name = new ArrayList<>();
 		
 		name.add("Ramu1");
-		name.add("Shyam");
+		name.add("Shyam1");
 		name.add("Mohan");
 		name.add("Sohan");
 		
