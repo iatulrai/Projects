@@ -1,6 +1,6 @@
 package javaCodeTesting;
 
-public class Test2 {
+class Test2 {
 	
 	 static int x = 9;
 	static class InnerTest {
