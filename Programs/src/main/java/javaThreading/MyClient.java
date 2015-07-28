@@ -10,7 +10,7 @@ public class MyClient {
 	public void go() {
         try {
         	
-            Socket s = new Socket("127.0.0.1", 9000);
+            Socket s = new Socket ("127.0.0.1", 9000);
             InputStreamReader streamReader = new InputStreamReader(s.getInputStream()); 
             BufferedReader reader = new BufferedReader(streamReader);
             
