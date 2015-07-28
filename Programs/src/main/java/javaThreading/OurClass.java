@@ -7,6 +7,9 @@ public class OurClass {
 			System.out.println(" Hello Java Thread");
 		}
 	}
-	
+	public static void main(String[] args) {
+		OurClass oc = new OurClass();
+		oc.run();
+	}
 
 }
