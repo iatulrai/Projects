@@ -19,7 +19,7 @@ public class Animate extends Applet {
 		
 		for (int a = 0; a < lastcount; a++) {
 			
-			pictures[a] = getImage(getCodeBase(), new Integer(a).toString() +".jpeg");
+			pictures[a] = getImage(getCodeBase(), new Integer(a).toString() +" .jpeg");
 			tracker.addImage(pictures[a], 0);
 		}
 		tracker.checkAll(true);
