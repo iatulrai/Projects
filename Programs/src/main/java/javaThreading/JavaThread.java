@@ -4,7 +4,7 @@ package javaThreading;
 
  class JavaThreadDemo implements Runnable{
 	
-	public void run() {
+	public void run() {								// Always use public void run() method to call a thread
 		
 		System.out.println("new thread");
 		
