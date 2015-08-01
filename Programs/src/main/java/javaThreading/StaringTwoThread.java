@@ -21,6 +21,7 @@ public class StaringTwoThread implements Runnable{
 	public void run() {
 		
 		for (int i = 0; i < 15; i++) {
+			
 			String name = Thread.currentThread().getName();
 			System.out.println(name + " is running");
 		}
