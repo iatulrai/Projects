@@ -1,3 +1,5 @@
+// a thread implemented by Runnable interface
+
 package javaThreading;
 
  class JavaThreadDemo implements Runnable{

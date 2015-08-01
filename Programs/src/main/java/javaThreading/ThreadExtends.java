@@ -11,6 +11,8 @@ public class ThreadExtends extends Thread {
 		
 		ThreadExtends te = new ThreadExtends();
 		te.start();
+		
+		System.out.println("main thread");
 	}
 
 }
