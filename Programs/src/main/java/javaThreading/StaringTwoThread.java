@@ -20,7 +20,7 @@ public class StaringTwoThread implements Runnable{
 	@Override
 	public void run() {
 		
-		for (int i = 0; i < 15; i++) {
+		for (int i = 0; i < 30; i++) {
 			
 			String name = Thread.currentThread().getName();
 			System.out.println(name + " is running");
