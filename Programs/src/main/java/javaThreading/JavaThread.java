@@ -1,12 +1,27 @@
 package javaThreading;
 
-public class JavaThread {
+ class JavaThreadDemo implements Runnable{
 	
 	public void run() {
-		System.out.println("Java thread");
+		
+		go();
+		
+		
 	}
 	
+	public void go() {
+		
+		System.out.println("Java thread");
+		
+	}
+}
+	class JavaThread {
+	
 	public static void main(String[] args) {
+		
+		Runnable run = new JavaThreadDemo();
+		Thread td = new Thread();
+		td.start();
 		
 	}
 
