@@ -4,14 +4,14 @@ package javaThreading;
 
 class JavaThreadDemo implements Runnable{
 	
-	public void run() {								// Always use public void run() method to call a thread
+	public void run() {		// Always use public void run() method to call a thread
 		
 		try {
 			
 			
 			for (int i = 0; i < 10; i++) {
 				
-				Thread.sleep(2000);   			// add sleeep() method to get a chance to other thread to be run
+				Thread.sleep(2000);   // add sleep() method to get a chance to other thread to be run
 				
 				System.out.println("new thread");
 			}
