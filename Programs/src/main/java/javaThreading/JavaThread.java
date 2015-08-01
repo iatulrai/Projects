@@ -2,17 +2,18 @@
 
 package javaThreading;
 
- class JavaThreadDemo implements Runnable{
+class JavaThreadDemo implements Runnable{
 	
 	public void run() {								// Always use public void run() method to call a thread
 		
-		System.out.println("new thread");
-		
-	}
-	
+		for (int i = 0; i < 10; i++) {
+			
+			System.out.println("new thread");
+		}
+	}	
 }
 	
- class JavaThread {
+class JavaThread {
 	
 	public static void main(String[] args) {
 		
