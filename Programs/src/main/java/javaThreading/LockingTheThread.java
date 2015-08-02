@@ -44,7 +44,7 @@ public class LockingTheThread implements Runnable{
 			try {
 				
 				System.out.println(Thread.currentThread().getName() + " is going to sleep");
-				Thread.sleep(3000);
+				Thread.sleep(1000);
 				
 			} catch (InterruptedException ex){
 				ex.printStackTrace();
