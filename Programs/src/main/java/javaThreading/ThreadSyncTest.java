@@ -5,7 +5,7 @@ class SyncTest implements Runnable {
 	private int balance;
 
 	@Override
-	public void run() {
+	public synchronized void run() {
 		for (int i = 0; i < 35; i++) {
 			increment();
 			System.out.println("Balance is " + balance);
@@ -13,7 +13,7 @@ class SyncTest implements Runnable {
 		
 	}
 	
-	public void increment() {
+	public  void increment() {
 		
 		int i = balance;
 		balance++;
