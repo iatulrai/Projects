@@ -2,10 +2,10 @@
 
 package javaThreading;
 
-public class StaringTwoThread implements Runnable{
+public class StartingTwoThread implements Runnable{
 	public static void main(String[] args) {
 		
-		StaringTwoThread twoThread = new StaringTwoThread();
+		StartingTwoThread twoThread = new StartingTwoThread();
 		
 		Thread first = new Thread(twoThread);
 		Thread second = new Thread(twoThread);
@@ -15,10 +15,12 @@ public class StaringTwoThread implements Runnable{
 		
 		first.start();
 		second.start();
+        	
 	}
 
 	@Override
 	public void run() {
+		
 		
 		for (int i = 0; i < 30; i++) {
 			
