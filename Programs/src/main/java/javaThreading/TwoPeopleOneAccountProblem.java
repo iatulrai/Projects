@@ -36,31 +36,31 @@ public class TwoPeopleOneAccountProblem implements Runnable{
 
 
 
-private void makeWithdrwal(int amount) {
+	private void makeWithdrwal(int amount) {
 	
-	if(account.getBalance() >= amount) {
-		
-		System.out.println(Thread.currentThread().getName() + " is about to withdraw");
-		try {
+		if(account.getBalance() >= amount) {
 			
-			System.out.println(Thread.currentThread().getName() + " is going to sleep");
-			Thread.sleep(3000);
+			System.out.println(Thread.currentThread().getName() + " is about to withdraw");
+			try {
+				
+				System.out.println(Thread.currentThread().getName() + " is going to sleep");
+				Thread.sleep(3000);
+				
+			} catch (InterruptedException ex){
+				ex.printStackTrace();
+			}
 			
-		} catch (InterruptedException ex){
-			ex.printStackTrace();
+			System.out.println(Thread.currentThread().getName() + " is wake up");
+			
+			account.withdraw(amount);
+			
+			System.out.println(Thread.currentThread().getName() + " completes the withdraw");
+			
+		} else {
+			
+			System.out.println("Not anough balance for " + Thread.currentThread().getName() );
 		}
-		
-		System.out.println(Thread.currentThread().getName() + " is wake up");
-		
-		account.withdraw(amount);
-		
-		System.out.println(Thread.currentThread().getName() + " completes the withdraw");
-		
-	} else {
-		
-		System.out.println("Not anough balance for " + Thread.currentThread().getName() );
-	}
- }
+	 }
 
 }
 class BankAccount {
