@@ -12,7 +12,7 @@ public class CallableDemo {
 		   SumTask sumTask = new SumTask(20);
 		   Future<Integer> future = service.submit(sumTask);
 		   Integer result = future.get();
-		   System.out.println(result);
+		   System.out.println("Ok: " +result);
 	   }
 	}
 	class SumTask implements Callable<Integer> {
