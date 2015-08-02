@@ -10,7 +10,7 @@ public class StartingTwoThread implements Runnable{
 		Thread first = new Thread(twoThread);
 		Thread second = new Thread(twoThread);
 		
-		first.setName("first Thread");
+		first.setName("First Thread");
 		second.setName("Second Thread");
 		
 		first.start();
