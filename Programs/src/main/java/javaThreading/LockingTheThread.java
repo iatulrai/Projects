@@ -58,7 +58,7 @@ public class LockingTheThread implements Runnable{
 			
 		} else {
 			
-			System.out.println("Not anough balance for " + Thread.currentThread().getName() );
+			System.out.println("Not anough money for " + Thread.currentThread().getName() );
 		}
 	 }
 
