@@ -6,26 +6,31 @@ public class ThreadPriority extends Thread {
 
 		ThreadPriority tp1 = new ThreadPriority();
 		ThreadPriority tp2 = new ThreadPriority();
-		//ThreadPriority tp3 = new ThreadPriority();
+		ThreadPriority tp3 = new ThreadPriority();
 
 		tp1.setName("Thread A");
 		tp2.setName("Thread B");
-		//tp3.setName("Thread C");
+		tp3.setName("Thread C");
 
 		tp1.setPriority(Thread.MIN_PRIORITY);
 		tp2.setPriority(Thread.MAX_PRIORITY);
-		//tp3.setDaemon(true);
+		tp3.setDaemon(true);
+
+		tp1.getState();
+		tp2.getState();
+		tp3.getState();
 
 		tp1.start();
 		tp2.start();
-		//tp3.start();
+		tp3.stop();
 
 	}
 
 	public void run() {
 
-		System.out.println("Thread name: " + Thread.currentThread().getName() + " || Thread priority: " + Thread.currentThread().getPriority());
-	
+		System.out.println("Thread name: " + Thread.currentThread().getName() + " || Thread priority: "
+				+ Thread.currentThread().getPriority() + " || Thread State: " + Thread.currentThread().getState());
+
 	}
 
 }
