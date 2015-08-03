@@ -18,12 +18,12 @@ public class ThreadCommunication extends Thread {
 
 	public void run() {
 
-		boolean conditionFlag = true;
+		boolean conditionFlag = false;
 
 		while (!conditionFlag) {
 			try {
 				
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 				
 			} catch (InterruptedException ex) {
 				ex.printStackTrace();
