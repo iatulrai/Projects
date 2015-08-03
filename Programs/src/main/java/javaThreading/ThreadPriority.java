@@ -30,17 +30,15 @@ public class ThreadPriority extends Thread {
 		tp3.stop();
 		tp4.start();
 
-	    ThreadPriority.activeCount();
+		Thread.activeCount();
 
 	}
 
-	
 	public void run() {
 
 		System.out.println("Thread name: " + Thread.currentThread().getName() + " || Thread priority: "
-				+ Thread.currentThread().getPriority() + " || Thread State: " + Thread.currentThread().getState());
-		
-       System.out.println(Thread.activeCount());
+				+ Thread.currentThread().getPriority() + " || Thread State: " + Thread.currentThread().getState()
+				+ " || Thread Count: " + Thread.activeCount());
 
 	}
 
