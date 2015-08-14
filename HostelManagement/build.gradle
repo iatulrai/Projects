@@ -1,7 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'war'
-archivesBaseName = 'HM'
+archivesBaseName = 'HMS'
 version = '1' 
 repositories {
     mavenCentral()
