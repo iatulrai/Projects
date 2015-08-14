@@ -47,6 +47,7 @@ public class UserDAO {
 			preStat.setString(8, course);
 			preStat.setString(9, sem);
 			preStat.setString(10, email);
+			preStat.setString(11, doe);
 
 			// here we convert string values into date object in java
 
