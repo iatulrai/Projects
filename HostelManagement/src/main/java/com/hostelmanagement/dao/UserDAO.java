@@ -22,8 +22,8 @@ public class UserDAO {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			connection = DriverManager.getConnection(
-					"jdbc:oracle:thin:@localhost:1521:oracle12c", "system",
-					"1993Atul");
+					"jdbc:oracle:thin:@localhost:1521:oracle12c", "hm",
+					"system");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
