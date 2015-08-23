@@ -40,6 +40,12 @@ public class UserServlet extends HttpServlet {
 
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
+		out.println("<html>");
+		out.println("<head><title>New Student User Registration Form- RSMT BOY'S HOSTEL</title>");
+		out.println("<link rel='stylesheet' type='text/css' href='<%=request.getContextPath()%>/css/userform.css' />");
+		out.println("</head><body>");
+		out.println("<h1>RSMT BOY'S HOSTEL</h1>");
 		out.println("User Info submitted.");
+		out.println("</body></html>");
 	}
 }

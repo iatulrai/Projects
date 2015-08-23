@@ -21,9 +21,8 @@ public class UserDAO {
 	static {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			connection = DriverManager.getConnection(
-					"jdbc:oracle:thin:@localhost:1521:oracle12c", "hm",
-					"system");
+			connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:oracle12c", "hm","system");
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -70,10 +69,12 @@ public class UserDAO {
 	public UserDTO getUserInfoByCh(int challan) {
 		UserDTO userDTO = new UserDTO();
 		try {
-			PreparedStatement preStat = connection
-					.prepareStatement("select CHALLAN, NAME, FNAME from user_form where CHALLAN = ?");
+			PreparedStatement preStat = connection.prepareStatement("select CHALLAN, NAME, FNAME from user_form where CHALLAN = ?");
+			
 			preStat.setInt(1, challan);
+			
 			ResultSet result = preStat.executeQuery();
+			
 			while (result.next()) {
 				userDTO.setChallan(result.getInt(1));
 				userDTO.setName(result.getString(2));

@@ -2,10 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>User Info by Challan</title>
+<title>Search Student by Challan No.</title>
+
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/userform.css" />
 </head>
 
 <body>
+
+<h1>RSMT BOY'S HOSTEL</h1>
 
 	<form method="post" action="userInfoByCh">
 	
