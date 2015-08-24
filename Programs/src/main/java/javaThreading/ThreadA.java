@@ -7,6 +7,7 @@ public class ThreadA {
 
 		synchronized (b) {
 			try {
+				Thread.sleep(1000);
 				System.out.println("Waiting for b to complete...");
 				b.wait();
 			} catch (InterruptedException e) {
@@ -24,6 +25,12 @@ class ThreadB extends Thread {
 	@Override
 	public void run() {
 		synchronized (this) {
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			for (int i = 0; i < 100; i++) {
 				total += i;
 			}
