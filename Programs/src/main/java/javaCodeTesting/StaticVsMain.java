@@ -9,7 +9,7 @@ public class StaticVsMain {
 
 	static {
 		System.out.println("I am a STATIC block :)");
-		
+		System.exit(0);
 	}
 
 }
