@@ -5,7 +5,7 @@ class NumberHolder {
 	public float aFloat;
 }
 
-public class NumberHolderDisplay {
+class NumberHolderDisplay {
 	public static void main(String[] args) {
 		NumberHolder aNumberHolder = new NumberHolder();
 		aNumberHolder.anInt = 1;
