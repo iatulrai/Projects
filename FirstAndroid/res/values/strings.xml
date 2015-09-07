@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">MyApp</string>
-    <string name="message1">Hello Word by Atul Rai</string>
+    <string name="message1">Hello World by Atul Rai</string>
   
 
 </resources>
