@@ -4,6 +4,7 @@
 <servlet>  
 <servlet-name>AtulRai</servlet-name>  
 <jsp-file>/config_implicit_object.jsp</jsp-file>  
+<jsp-file>/application_implicit_object.jsp</jsp-file>  
   
 <init-param>  
 <param-name>dname</param-name>  
@@ -15,6 +16,12 @@
 <servlet-mapping>  
 <servlet-name>AtulRai</servlet-name>  
 <url-pattern>/config_implicit_object</url-pattern>  
+<url-pattern>/application_implicit_object</url-pattern>  
 </servlet-mapping>  
+
+<context-param>  
+<param-name>dr_name</param-name>  
+<param-value>sun.jdbc.odbc.JdbcOdbcDriver.AtulRai</param-value>  
+</context-param>  
   
 </web-app>  
