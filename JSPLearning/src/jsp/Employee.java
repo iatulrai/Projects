@@ -1,9 +1,8 @@
 package jsp;
 
 public class Employee implements java.io.Serializable {
-
+	
 	private int id;
-
 	private String name;
 
 	public Employee() {
