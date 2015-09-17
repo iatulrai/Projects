@@ -10,8 +10,8 @@
 </head>
 <body>
 	<form action="welcome.jsp">
-		<input type="text" name="uname"> 
-		<input type="submit" value="Go"><br />
+		<input type="text" name="uname"> <input type="submit"
+			value="Go"><br />
 	</form>
 </body>
 </html>
