@@ -2,6 +2,10 @@
 <web-app>
 
 	<servlet>
+	    
+	    <servlet-name>mvc</servlet-name>
+		<servlet-class>jsp.ControllerServlet</servlet-class>
+	    
 		<servlet-name>AtulRai</servlet-name>
 		<jsp-file>/config_implicit_object.jsp</jsp-file>
 		<jsp-file>/application_implicit_object.jsp</jsp-file>
@@ -14,6 +18,10 @@
 	</servlet>
 
 	<servlet-mapping>
+	    
+	    <servlet-name>mvc</servlet-name>
+		<url-pattern>/ControllerServlet</url-pattern>
+	    
 		<servlet-name>AtulRai</servlet-name>
 		<url-pattern>/config_implicit_object</url-pattern>
 		<url-pattern>/application_implicit_object</url-pattern>
@@ -28,5 +36,6 @@
 		<exception-type>java.lang.Exception</exception-type>
 		<location>/error.jsp</location>
 	</error-page>
+
 
 </web-app>  
