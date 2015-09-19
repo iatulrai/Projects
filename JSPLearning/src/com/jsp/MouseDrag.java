@@ -1,4 +1,4 @@
-package jsp;
+package com.jsp;
 
 import java.applet.Applet;
 import java.awt.Color;

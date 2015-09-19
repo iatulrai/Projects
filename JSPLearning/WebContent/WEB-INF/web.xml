@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
 
 	<servlet>
-	    
-	    <servlet-name>mvc</servlet-name>
+
+		<servlet-name>mvc</servlet-name>
 		<servlet-class>jsp.ControllerServlet</servlet-class>
-	    
-		<servlet-name>AtulRai</servlet-name>
-		<jsp-file>/config_implicit_object.jsp</jsp-file>
-		<jsp-file>/application_implicit_object.jsp</jsp-file>
 
 		<init-param>
 			<param-name>dname</param-name>
@@ -18,11 +17,11 @@
 	</servlet>
 
 	<servlet-mapping>
-	    
-	    <servlet-name>mvc</servlet-name>
+
+		<servlet-name>mvc</servlet-name>
 		<url-pattern>/ControllerServlet</url-pattern>
-	    
-		<servlet-name>AtulRai</servlet-name>
+
+
 		<url-pattern>/config_implicit_object</url-pattern>
 		<url-pattern>/application_implicit_object</url-pattern>
 	</servlet-mapping>

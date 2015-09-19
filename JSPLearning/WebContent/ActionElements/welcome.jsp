@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<jsp:useBean id="obj" class="jsp.User" />
+<jsp:useBean id="obj" class="com.jsp.User" />
 <jsp:setProperty name="obj" property="*" />
 
 Welcome, <jsp:getProperty name="obj" property="name" />

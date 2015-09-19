@@ -6,7 +6,7 @@
 </head>
 <body>
 
-	<jsp:useBean id="u" class="jsp.SetAndGetUser"></jsp:useBean>
+	<jsp:useBean id="u" class="com.jsp.SetAndGetUser"></jsp:useBean>
 	<jsp:setProperty property="*" name="u" />
 
 	Records:

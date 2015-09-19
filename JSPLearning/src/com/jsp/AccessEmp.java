@@ -1,4 +1,4 @@
-package jsp;
+package com.jsp;
 
 public class AccessEmp {
 	public static void main(String args[]) {

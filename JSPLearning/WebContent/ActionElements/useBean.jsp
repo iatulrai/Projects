@@ -1,4 +1,4 @@
-<jsp:useBean id="obj" class="jsp.Calculator" />
+<jsp:useBean id="obj" class="com.jsp.Calculator" />
 <html>
 <head>
 
