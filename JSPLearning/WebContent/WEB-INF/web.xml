@@ -7,7 +7,7 @@
 	<servlet>
 
 		<servlet-name>mvc</servlet-name>
-		<servlet-class>jsp.ControllerServlet</servlet-class>
+		<servlet-class>com.jsp.ControllerServlet</servlet-class>
 
 		<init-param>
 			<param-name>dname</param-name>
