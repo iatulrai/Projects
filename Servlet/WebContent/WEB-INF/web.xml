@@ -108,8 +108,8 @@
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>CookieServlet1</servlet-name>
-		<url-pattern>/servletcookie</url-pattern>
+		<servlet-name>Cookie1</servlet-name>
+		<url-pattern>/servletcookie1</url-pattern>
 	</servlet-mapping>
 
 	<servlet>
@@ -118,8 +118,8 @@
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>CookieServlet2</servlet-name>
-		<url-pattern>/servletcookie1</url-pattern>
+		<servlet-name>Cookie2</servlet-name>
+		<url-pattern>/servletcookie2</url-pattern>
 	</servlet-mapping>
 
 
