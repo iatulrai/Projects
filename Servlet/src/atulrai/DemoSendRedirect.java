@@ -10,24 +10,25 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Hello
+ * Servlet implementation class DemoSendRedirect
  */
-@WebServlet("/Hello")
-public class Hello extends HttpServlet {
+@WebServlet("/DemoSendRedirect")
+public class DemoSendRedirect extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	public Hello() {
-	}
-
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
 
 		response.setContentType("text/html");
-		PrintWriter out = response.getWriter();
 
-		out.print("<html><body>");
-		out.print("<h3>Hello Servlet</h3>");
-		out.print("</body></html>");
+		PrintWriter pw = response.getWriter();
+		response.sendRedirect("http://www.google.com");
+		pw.close();
 	}
 
 }

@@ -1,3 +1,4 @@
+//Example of ServletConfig to get initialization parameter
 package atulrai;
 
 import java.io.IOException;
@@ -10,19 +11,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class HttpDemoServlet
+ * Servlet implementation class ServletConfig
  */
-@WebServlet("/HttpDemoServlet")
-public class HttpDemoServlet extends HttpServlet {
+@WebServlet("/ServletConfig")
+public class ServletConfig extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
-	/**
-	 * @see HttpServlet#HttpServlet()
-	 */
-	public HttpDemoServlet() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
@@ -30,14 +23,14 @@ public class HttpDemoServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
+
 		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
 
-		PrintWriter pw = response.getWriter();
-		pw.println("<html><body>");
-		pw.println("Welcome to servlet");
-		pw.println("</body></html>");
-
-		pw.close();// closing the stream
+		javax.servlet.ServletConfig config = getServletConfig();
+		String driver = config.getInitParameter("driver");
+		out.print("Driver is: " + driver);
+		out.close();
 
 	}
 
