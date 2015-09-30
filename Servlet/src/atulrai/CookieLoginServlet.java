@@ -36,7 +36,7 @@ public class CookieLoginServlet extends HttpServlet {
 
 		if (password.equals("cookie")) {
 			out.print("You are successfully logged in :)");
-			out.print("Welcome " + name);
+			out.print("<br>Welcome " + name);
 
 			Cookie ck = new Cookie("name", name);
 			response.addCookie(ck);
