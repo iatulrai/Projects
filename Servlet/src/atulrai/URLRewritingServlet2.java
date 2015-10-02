@@ -26,8 +26,7 @@ public class URLRewritingServlet2 extends HttpServlet {
 
 		try {
 
-			response.setContentType("test/html");
-
+			response.setContentType("text/html");
 			PrintWriter out = response.getWriter();
 
 			// getting value from the query string
@@ -37,8 +36,7 @@ public class URLRewritingServlet2 extends HttpServlet {
 			out.close();
 
 		} catch (Exception e) {
-			// TODO: handle exception
-			e.printStackTrace();
+			System.out.println(e);
 		}
 	}
 

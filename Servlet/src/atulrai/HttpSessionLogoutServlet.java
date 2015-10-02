@@ -8,12 +8,13 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
- * Servlet implementation class URLRewritingServlet1
+ * Servlet implementation class HttpSessionLogoutServlet
  */
-@WebServlet("/URLRewritingServlet1")
-public class URLRewritingServlet1 extends HttpServlet {
+@WebServlet("/HttpSessionLogoutServlet")
+public class HttpSessionLogoutServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -24,23 +25,17 @@ public class URLRewritingServlet1 extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 
-		try {
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
 
-			response.setContentType("text/html");
-			PrintWriter out = response.getWriter();
+		request.getRequestDispatcher("http-session-login-logout-link.html")
+				.include(request, response);
 
-			String n = request.getParameter("userName");
-			out.print("Welcome " + n);
+		HttpSession session = request.getSession();
+		session.invalidate();
 
-			// appending the username in the query string
-			out.print("<a href='URLRewritingServlet2?uname=" + n
-					+ "'>visit</a>");
+		out.print("You are successfully logged out!");
 
-			out.close();
-
-		} catch (Exception e) {
-			System.out.println(e);
-		}
+		out.close();
 	}
-
 }
