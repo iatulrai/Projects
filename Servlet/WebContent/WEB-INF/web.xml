@@ -113,26 +113,41 @@
 		<servlet-name>Cookie2</servlet-name>
 		<url-pattern>/servletcookie2</url-pattern>
 	</servlet-mapping>
-
-
-
 	<servlet>
 		<servlet-name>filterservlet</servlet-name>
 		<servlet-class>atulrai.ServletFilter2</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>filterservlet</servlet-name>
 		<url-pattern>/servletfilter</url-pattern>
 	</servlet-mapping>
-
 	<filter>
 		<filter-name>Filter</filter-name>
 		<filter-class>atulrai.ServletFilter1</filter-class>
 	</filter>
-
 	<filter-mapping>
 		<filter-name>Filter</filter-name>
 		<url-pattern>/servletfilter</url-pattern>
+	</filter-mapping>
+
+
+	<servlet>
+		<servlet-name>AuthenticationFilterServlet</servlet-name>
+		<servlet-class>atulrai.AuthenticationFilterServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AuthenticationFilterServlet</servlet-name>
+		<url-pattern>/authentication</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+		<filter-name>AuthenticationFilter</filter-name>
+		<filter-class>atulrai.AuthenticationFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>AuthenticationFilter</filter-name>
+		<url-pattern>/authentication</url-pattern>
 	</filter-mapping>
 </web-app>
