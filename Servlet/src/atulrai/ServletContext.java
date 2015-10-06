@@ -2,6 +2,7 @@ package atulrai;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -33,6 +34,11 @@ public class ServletContext extends HttpServlet {
 		String driverName = context.getInitParameter("dname");
 		out.println("<b>Driver name is : </b>" + driverName);
 		out.close();
+	}
+
+	public List getAttribute(String string) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

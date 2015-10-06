@@ -173,22 +173,17 @@
 		<servlet-name>Time</servlet-name>
 		<url-pattern>/timezone</url-pattern>
 	</servlet-mapping>
-
-
-
-
 	<servlet>
 		<servlet-name>RollNoSearch</servlet-name>
 		<servlet-class>atulrai.ResultSearchServlet</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>RollNoSearch</servlet-name>
 		<url-pattern>/search</url-pattern>
 	</servlet-mapping>
 
 
-
-
-
+	<listener>
+		<listener-class>atulrai.FetchRecordsListener</listener-class>
+	</listener>
 </web-app>
