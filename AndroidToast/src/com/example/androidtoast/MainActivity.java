@@ -2,8 +2,11 @@ package com.example.androidtoast;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
@@ -13,28 +16,27 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		// Displaying the Toast
+		/*
+		 * //Displaying the Toast
+		 * 
+		 * Toast.makeText(getApplicationContext(), "Hello Atul Rai",
+		 * Toast.LENGTH_SHORT).show();
+		 */
+		LayoutInflater li = getLayoutInflater();
+		View layout = li.inflate(R.layout.customtoast,
+				(ViewGroup) findViewById(R.id.custom_toast_layout));
 
-		Toast.makeText(getApplicationContext(), "Hello Atul Rai",
-				Toast.LENGTH_SHORT).show();
+		Toast toast = new Toast(getApplicationContext());
+		toast.setDuration(Toast.LENGTH_SHORT);
+		toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+		toast.setView(layout);
+		toast.show();
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
-	}
 }
