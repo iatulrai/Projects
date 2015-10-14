@@ -28,11 +28,22 @@ public class StoreData {
 		e1.setFirstName("Atul");
 		e1.setLastName("Rai");
 
-		
+		Employee e2 = new Employee();
+
+		e2.setId(123);
+		e2.setFirstName("Ram");
+		e2.setLastName("Singh");
+
+		Employee e3 = new Employee();
+
+		e3.setId(12333);
+		e3.setFirstName("Anand");
+		e3.setLastName("Maurya");
 
 		// persisting the object
 		session.persist(e1);
-		
+		session.persist(e2);
+		session.persist(e3);
 
 		// transaction is committed
 		t.commit();
