@@ -1,4 +1,4 @@
-package com.hib;
+package com.hb;
 
 public class Employee {
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="D:/Software/JAR/hibernate3/antlr-2.7.7.jar"/>
 	<classpathentry kind="lib" path="D:/Software/JAR/hibernate3/asm.jar"/>
 	<classpathentry kind="lib" path="D:/Software/JAR/hibernate3/asm-attrs.jar"/>
@@ -13,7 +13,7 @@
 	<classpathentry kind="lib" path="D:/Software/JAR/hibernate3/dom4j-1.6.1.jar"/>
 	<classpathentry kind="lib" path="D:/Software/JAR/hibernate3/ehcache-1.2.3.jar"/>
 	<classpathentry kind="lib" path="D:/Software/JAR/hibernate3/ejb3-persistence.jar"/>
-	<classpathentry kind="lib" path="D:/Software/JAR/hibernate3/hibernate3.jar" sourcepath="C:/Program Files/Java/jdk1.8.0_45/javafx-src.zip"/>
+	<classpathentry kind="lib" path="D:/Software/JAR/hibernate3/hibernate3.jar"/>
 	<classpathentry kind="lib" path="D:/Software/JAR/hibernate3/hibernate-annotations.jar"/>
 	<classpathentry kind="lib" path="D:/Software/JAR/hibernate3/hibernate-commons-annotations.jar"/>
 	<classpathentry kind="lib" path="D:/Software/JAR/hibernate3/hibernate-jpa-2.0-api-1.0.1.jar"/>
