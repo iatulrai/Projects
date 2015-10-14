@@ -13,7 +13,9 @@
 		<property name="connection.username">AtulRai</property>
 		<property name="connection.password">atulrai</property>
 		<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
-		<mapping resource="employee.hbm.xml" />
+
+
+		<mapping class="com.hbannotation.Emp" />
 
 	</session-factory>
 

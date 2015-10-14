@@ -4,10 +4,10 @@
  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<class name="com.hib.Employee" table="emp11">
+	<class name="com.hib.Employee" table="emp1000">
 
 		<id name="id">
-			<generator class="assigned"></generator>
+			<generator class="assined"></generator>
 		</id>
 
 		<property name="firstName"></property>
