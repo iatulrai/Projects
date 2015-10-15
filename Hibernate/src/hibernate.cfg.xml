@@ -15,6 +15,11 @@
 
 
 		<mapping resource="employee.hbm.xml" />
+
+
+		<mapping class="com.hbannotation.TPHEmployee" />
+		<mapping class="com.hbannotation.TPHEmployee_Regular" />
+		<mapping class="com.hbannotation.TPHEmployee_Contract" />
 	</session-factory>
 
 </hibernate-configuration>  
