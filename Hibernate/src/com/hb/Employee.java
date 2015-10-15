@@ -3,7 +3,7 @@ package com.hb;
 public class Employee {
 
 	private int id;
-	private String firstName, lastName;
+	private String name;
 
 	public int getId() {
 		return id;
@@ -13,20 +13,11 @@ public class Employee {
 		this.id = id;
 	}
 
-	public String getFirstName() {
-		return firstName;
+	public String getName() {
+		return name;
 	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setName(String name) {
+		this.name = name;
 	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-
 }

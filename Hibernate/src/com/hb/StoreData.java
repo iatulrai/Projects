@@ -1,56 +1,36 @@
 package com.hb;
 
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 public class StoreData {
 	public static void main(String[] args) {
+		Session session = new Configuration().configure("hibernate.cfg.xml")
+				.buildSessionFactory().openSession();
 
-		// creating configuration object
-		Configuration cfg = new Configuration();
-		cfg.configure("hibernate.cfg.xml");// populates the date of
-											// configuration file
-
-		// creating session object factory
-		SessionFactory factory = cfg.buildSessionFactory();
-
-		// creating session object
-
-		Session session = factory.openSession();
-
-		// creating transaction object
 		Transaction t = session.beginTransaction();
 
 		Employee e1 = new Employee();
-		e1.setId(1111);
-		e1.setFirstName("Atul");
-		e1.setLastName("Rai");
+		e1.setName("Atul");
 
-		Employee e2 = new Employee();
+		Regular_Employee e2 = new Regular_Employee();
+		e2.setName("Anand");
+		e2.setSalary(50000);
+		e2.setBonus(5);
 
-		e2.setId(123);
-		e2.setFirstName("Ram");
-		e2.setLastName("Singh");
+		Contract_Employee e3 = new Contract_Employee();
+		e3.setName("Mohan");
+		e3.setPay_per_hour(1000);
+		e3.setContract_duration("15 hours");
+		
 
-		Employee e3 = new Employee();
-
-		e3.setId(12333);
-		e3.setFirstName("Anand");
-		e3.setLastName("Maurya");
-
-		// persisting the object
 		session.persist(e1);
 		session.persist(e2);
 		session.persist(e3);
 
-		// transaction is committed
 		t.commit();
 		session.close();
-
-		System.out.println("Data saved successfully");
-
+		System.out.println("success");
 	}
-
 }
