@@ -1,4 +1,4 @@
-package main.java;
+package myspring;
 
 public class Student {
 
