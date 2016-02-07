@@ -14,6 +14,10 @@ public class Bicycle {
 		speed = startSpeed;
 	}
 
+	public Bicycle() {
+		// TODO Auto-generated constructor stub
+	}
+
 	void changeCadence(int newVlaue) {
 		cadence = newVlaue;
 	}
