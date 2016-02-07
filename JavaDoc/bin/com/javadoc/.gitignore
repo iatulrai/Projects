@@ -18,3 +18,7 @@
 /Book.class
 /BookTest.class
 /GetClassMethod.class
+/Test.class
+/GetClassMethodTest.class
+/HashCodeMethod.class
+/ToStringMethod.class
