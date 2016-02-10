@@ -11,7 +11,7 @@ public class Generic1 {
 		List list = new ArrayList();
 		list.add("hello");
 		String s = (String) list.get(0); // casting applied
-		System.out.println(s);
+		System.out.println(s.length());
 
 	}
 
