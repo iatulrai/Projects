@@ -5,8 +5,6 @@ public class ValueOfDemo {
 	public static void main(String[] args) {
 
 		if (args.length == 2) {
-			
-			
 
 			// convert string to number
 
