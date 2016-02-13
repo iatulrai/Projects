@@ -13,7 +13,7 @@ public class CopyBytes {
 
 		try {
 
-			in = new FileInputStream("ByteStreamIn.txt");
+			in = new FileInputStream("InputStream.txt");
 			out = new FileOutputStream("ByteStreamOut.txt");
 
 			int c;
@@ -24,7 +24,7 @@ public class CopyBytes {
 
 			}
 			
-			System.out.println("File copied");
+			System.out.println("Data copied");
 
 		} finally {
 
